@@ -1,0 +1,14 @@
+# Parameters that describe server
+n_server_rounds: 1000 # The number of rounds to run FL
+client_rate: 0.1
+
+# Parameters that describe clients
+n_clients: 100 # The number of clients in the FL experiment
+local_epochs: 20 # The number of epochs to complete for client
+batch_size: 10 # The batch size for client training -> type "inf" for full batch
+
+# Parameters that describe the data
+IID: 1 #For IID experiments set to 1 and for non-IID experiments set to 0
+
+# Parameters that describe the model structure
+model_struct: "2NN" #CNN or 2NN
